@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="39bb3db7-454f-4ca6-93b1-064c8f733b78" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1221/DonorRegisterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DonorRegisterService.xsd" MetadataType="Schema" ID="a717496e-3d47-4dd0-89a3-16b7d5cef445" SourceId="1" SourceUrl="http://localhost:1221/DonorRegisterService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DonorRegisterService1.xsd" MetadataType="Schema" ID="6463fd2a-5479-447d-99d9-6c318d0ca349" SourceId="1" SourceUrl="http://localhost:1221/DonorRegisterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DonorRegisterService2.xsd" MetadataType="Schema" ID="a0c735ae-ded1-47dd-96ea-52c7d2f29562" SourceId="1" SourceUrl="http://localhost:1221/DonorRegisterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DonorRegisterService.disco" MetadataType="Disco" ID="eb72e4f2-598e-4af6-af6f-2c966202c220" SourceId="1" SourceUrl="http://localhost:1221/DonorRegisterService.svc?disco" />
+    <MetadataFile FileName="DonorRegisterService.wsdl" MetadataType="Wsdl" ID="386a916b-b5ee-42e1-928f-948e80c12883" SourceId="1" SourceUrl="http://localhost:1221/DonorRegisterService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

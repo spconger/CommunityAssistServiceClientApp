@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Donations" nillable="true" type="tns:ArrayOfDonation" />
+      <xs:element minOccurs="0" name="PersonAddresses" nillable="true" type="tns:ArrayOfPersonAddress" />
+      <xs:element minOccurs="0" name="PersonContacts" nillable="true" type="tns:ArrayOfPersonContact" />
+      <xs:element minOccurs="0" name="PersonEntryDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PersonFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonKey" type="xs:int" />
+      <xs:element minOccurs="0" name="PersonLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonPlainPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonUserPassword" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="PersonUsername" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Personpasskey" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="ArrayOfDonation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Donation" nillable="true" type="tns:Donation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDonation" nillable="true" type="tns:ArrayOfDonation" />
+  <xs:complexType name="Donation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DonationAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DonationConfirmDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DonationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DonationKey" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeKey" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="PersonKey" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Donation" nillable="true" type="tns:Donation" />
+  <xs:complexType name="ArrayOfPersonAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonAddress" nillable="true" type="tns:PersonAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonAddress" nillable="true" type="tns:ArrayOfPersonAddress" />
+  <xs:complexType name="PersonAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apartment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="PersonAddressKey" type="xs:int" />
+      <xs:element minOccurs="0" name="PersonKey" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonAddress" nillable="true" type="tns:PersonAddress" />
+  <xs:complexType name="ArrayOfPersonContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonContact" nillable="true" type="tns:PersonContact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonContact" nillable="true" type="tns:ArrayOfPersonContact" />
+  <xs:complexType name="PersonContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactKey" type="xs:int" />
+      <xs:element minOccurs="0" name="ContactTypeKey" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="PersonKey" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonContact" nillable="true" type="tns:PersonContact" />
+</xs:schema>
